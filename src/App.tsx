@@ -8,7 +8,7 @@ import NavBar from "./components/navBar"
 function App() {
 
   return (
-    <div className="app">
+    <div className="app overflow-x-hidden">
       <NavBar />
       <Router>
         <Routes>

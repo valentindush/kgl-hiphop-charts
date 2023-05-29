@@ -58,3 +58,50 @@ export const sliders:ISlider[] = [
     },
 
 ]
+type Song = {
+    song: string,
+    artist: string,
+    position: number
+}
+export const topSongs:Song[] = [
+    {
+        song: "SAGA",
+        artist: "Ish Kevin",
+        position: 1
+    },
+    {
+        song: "Bact to it",
+        artist: "Shim in Cut",
+        position: 2
+    },
+    {
+        song: "Muri BAG",
+        artist: "JOKA$$H, Trizzie Ninety Six, Bobby Bangs, Og2tonw",
+        position: 3
+    },
+    {
+        song: "Ya Nigga",
+        artist: "JOKA$$H, Sobermind, Bobby Bangs",
+        position: 4
+    },
+    {
+        song: "SAGA",
+        artist: "Ish Kevin",
+        position: 1
+    },
+    {
+        song: "Bact to it",
+        artist: "Shim in Cut",
+        position: 2
+    },
+    {
+        song: "Muri BAG",
+        artist: "JOKA$$H, Trizzie Ninety Six, Bobby Bangs, Og2tonw",
+        position: 3
+    },
+    {
+        song: "Ya Nigga",
+        artist: "JOKA$$H, Sobermind, Bobby Bangs",
+        position: 4
+    },
+]
