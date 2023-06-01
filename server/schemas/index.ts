@@ -1,3 +1,4 @@
 import song from './song'
 import slideArticle from './slideArticle'
-export const schemaTypes = [song, slideArticle]
+import album from './album'
+export const schemaTypes = [song, slideArticle, album]

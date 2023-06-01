@@ -16,7 +16,7 @@ export default {
         {
             name: "number",
             type: "number",
-            title: "Number"
+            title: "Position"
         }
     ]
 }
