@@ -27,7 +27,7 @@ const Slider = ({sliders}: SliderProps) => {
 
 
   return (
-      <div className={`max-w-full`}>
+      <div className={`max-w-full overflow-x-hidden`}>
         <Swiper
         onSlideChange={(e)=>setColor(colors[Math.floor(Math.random() * colors.length)])}
               pagination={true} modules={[Pagination]}

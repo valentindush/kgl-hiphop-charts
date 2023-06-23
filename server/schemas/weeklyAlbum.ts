@@ -1,7 +1,7 @@
 export default{
-    name: "album",
+    name: "weeklyAlbum",
     type: "document",
-    title: "Album",
+    title: "Weekly Album",
 
     fields: [
         {

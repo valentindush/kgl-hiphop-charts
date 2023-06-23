@@ -17,15 +17,15 @@ const WeeklyTopSongs = () => {
   }
 
   return (
-    <div className="">
+    <div className="w-screen overflow-x-hidden">
       <div className={`pt-[10rem] ${colors[Math.floor(Math.random() * colors.length)]} px-12`}>
-        <div className="flex justify-between items-start">
+        <div className="flex justify-between items-start md:block">
           <div className="">
             <div className="text-5xl font-bold text-white-primary max-w-4xl">{topSong.description}</div>
             <div className="text-xl font-bold text-white-primary mt-4">#1 {topSong.song}</div>
           </div>
-          <div className="min-w-[15rem] w-[15rem] h-[15rem] min-h-[15rem] object-cover md:w-full">
-            <img src={topSong.img} alt="" />
+          <div className="min-w-[15rem] w-[15rem] md:hidden h-[15rem] min-h-[15rem] md:min-h-0 md:h-[12rem] md:w-full">
+            <img className="md:w-full md:h-full object-cover" src={topSong.img} alt="" />
           </div>
         </div>
       </div>
@@ -33,9 +33,9 @@ const WeeklyTopSongs = () => {
         <h2 className="text-3xl font-semibold text-gray-600">Weekly Top Songs</h2>
       </div>
       <div className="mt-4">
-        <div className="grid grid-cols-2 gap-3 px-12">
+        <div className="grid grid-cols-2 gap-3 px-12 sm:px-8 sm:grid-cols-1">
           {topSongs.map((song, index) => (
-            <SongCard key={index} {...song} />
+            <SongCard  key={index} {...song} />
           ))}
         </div>
       </div>

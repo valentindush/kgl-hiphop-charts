@@ -10,7 +10,7 @@ const NavBar = () => {
     }
 
     return (
-        <div className='px-12 py-5 absolute top-0 z-20 w-screen'>
+        <div className='px-12 py-5 absolute top-0 z-20 w-full'>
             <div className="flex justify-between">
                 <a href="/">
                     <div className="logo text-white-primary flex items-center gap-1">

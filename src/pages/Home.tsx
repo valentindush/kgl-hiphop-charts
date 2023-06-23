@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Card } from "../components/home/card"
 import Slider from "../components/home/slider"
 import { sliders } from "../utils/data"
@@ -39,7 +39,7 @@ const Home = () => {
         no: "Long Way - Ish Kevin"
       },
       {
-        title: "Daily Top Songs",
+        title: "Upcoming Artists",
         description: "Ish Kevin's \"SAGA\" pick #1 from #29 last week",
         img: "https://th.bing.com/th/id/R.051025f3ed6b47246a4e599d270bed18?rik=aJiuqqKbSNs%2fMA&pid=ImgRaw&r=0",
         to: "dailyTopSongs",
@@ -60,10 +60,10 @@ const Home = () => {
       }
     ]
 
-    const [activeTab, setActiveTab] = useState(tabs[0])
+    const [activeTab, setActiveTab] = useState(tabs[0]) 
 
   return (
-    <div className="">
+    <div className="w-screen">
       <Slider sliders={sliders} />
 
       <div className="mt-3 py-5">
@@ -77,7 +77,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-4 mt-3 px-12 md:px-4 md:grid-cols-1">
+      <div className="grid grid-cols-3 gap-4 mt-3 px-12 md:px-4 md:grid-cols-1 pb-4">
         {cards.map((card, index) => (
           <Card key={index} card={{ ...card, color: colors[index] }} />
         ))}

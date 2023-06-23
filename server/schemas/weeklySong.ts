@@ -1,7 +1,7 @@
 export default {
-    name: "song",
+    name: "weeklysong",
     type: "document",
-    title: "Song",
+    title: "Weekly Song",
     fields: [
         {
             name: "song", 
